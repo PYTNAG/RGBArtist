@@ -1,0 +1,22 @@
+﻿<Window x:Class="RGBArtist.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:RGBArtist"
+        mc:Ignorable="d"
+        Title="RGBArtist" Height="800" Width="800"
+        Background="#FFF7F7F7">
+    <Grid>
+        <Image x:Name="Canvas" HorizontalAlignment="Left" Height="500" Margin="10,10,10,10" VerticalAlignment="Top" Width="500" ScrollViewer.VerticalScrollBarVisibility="Auto" ScrollViewer.HorizontalScrollBarVisibility="Auto"/>
+        <Button x:Name="GenerateBTN" Content="Generate" HorizontalAlignment="Left" Margin="520,10,0,0" VerticalAlignment="Top" Height="68" Width="270"/>
+        <Button x:Name="SaveBTN" Content="Save" HorizontalAlignment="Left" Margin="520,133,0,0" VerticalAlignment="Top" Height="68" Width="270"/>
+        <ScrollViewer Margin="10,520,10,10">
+            <StackPanel x:Name="InputFields" UseLayoutRounding="False" Orientation="Vertical"/>
+        </ScrollViewer>
+        <TextBox x:Name="saveFileName" FontSize="15" HorizontalAlignment="Left" Margin="520,103,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="270" Height="25"/>
+        <GroupBox Header="Module Info" Margin="520,206,10,269" BorderThickness="2,2,2,2">
+            <Label x:Name="ModuleDescription" HorizontalAlignment="Left" VerticalAlignment="Top"/>
+        </GroupBox>
+    </Grid>
+</Window>
